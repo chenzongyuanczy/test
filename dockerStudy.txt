@@ -1,0 +1,2 @@
+sql server容器启动指令
+docker run -e ACCEPT_EULA=Y -e MSSQL_PID="Developer" -e MSSQL_SA_PASSWORD="1234qwerASDF" -e MSSQL_TCP_PORT=1433 -p 1433:1433 -v /E/sqlserverdata:/var/opt/mssql/data --name sqlserver -d mcr.microsoft.com/mssql/server:2017-latest
